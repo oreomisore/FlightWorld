@@ -16,7 +16,7 @@ db = mysql.connector.connect(
 db_flights = mysql.connector.connect(
     host='127.0.0.1',
     user='root',
-    password='Orerules1',
+    password='',
     port='3306',
     database='flightsdb'
 
