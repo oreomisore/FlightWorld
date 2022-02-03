@@ -96,16 +96,3 @@ if __name__ == '__main__':
 
     
 
-# post method is used to get the the form data.
-# get method retrieves the information from the server
-
-# method to retrieve info from HTML
-# form = cgi.FieldStorage()
-# trip_way = form.getvalue('check')
-# departure_location = form.getvalue('departure-city')
-
-
-# departure_date = request.form['depart-date']
-#             return_date = request.form['return-date']
-#
-# trip_way = request.form['check']
