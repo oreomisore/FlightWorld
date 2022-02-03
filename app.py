@@ -3,11 +3,11 @@ from flask import Flask, render_template, redirect, request, session, url_for
 import mysql.connector
 
 app = Flask(__name__)
-app.secret_key = '1234567543'
+app.secret_key = ''
 db = mysql.connector.connect(
     host='127.0.0.1',
     user='root',
-    password='Orerules1',
+    password='',
     port='3306',
     database='logindb'
 
