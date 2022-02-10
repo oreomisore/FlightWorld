@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css')}}">
+
+</head>
+
+<body>
+    <p class="body-message">Sign In To Tripella</p>
+
+        <!--LOGIN CREDENTIALS BOX-->
+    <div class="login-container">
+        <form action="/new/booking" method="post">
+            <p class="email-message">sign-in with your email address</p>
+            <input class="credentials" name="Username" type="email" placeholder="email"><br><br>
+            <input class="credentials" name="Password" type="password" placeholder="lock"><br><br>
+            <input class="login-btn" type="submit" value="SIGN IN"><br><br>
+        </form>
+
+            <!--SUBMIT CREDENTIALS BOX-->
+        <form action ="/new">
+            <div class="submit-container">
+                <input class="input-btn" value="Register" type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

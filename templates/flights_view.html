@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Available Flights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css')}}">
+  </head>
+  <body>
+    <div class="table-container">
+      <h1 class="heading">Available Flights:</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="table-heading">Flight Number</th>
+            <th class="table-heading">Airline</th>
+            <th class="table-heading">Departure City</th>
+            <th class="table-heading">Arrival City</th>
+            <th class="table-heading">Time</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for data in info %}
+          <tr id="#selected-row">
+            <td class="flight-info1" data-label="Flight Number">{{data[0]}}</td>
+            <td class="flight-info2" data-label="Airline">{{data[1]}}</td>
+            <td class="flight-info3" data-label="Departure City">{{data[2]}}</td>
+            <td class="flight-info4" data-label="Arrival City">{{data[3]}}</td>
+            <td class="flight-info5" data-label="Time">{{data[4]}}</td>
+            <td class="data-button" data-label="#"><button>Select</button></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
+
+
+<!--            <td class="data-button" data-label="#"><a href="/pricing"><button>Select</button></a></td>-->
